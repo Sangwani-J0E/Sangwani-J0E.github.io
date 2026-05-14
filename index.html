@@ -3,973 +3,696 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <title>Sangwani Mkandawire - Web Developer</title>
-    <style>
-      /**
-      * Portfolio Template for Sangwani Mkandawire
-      * Styled with reference to Kelly Bootstrap Template
-      * Author: Adapted from BootstrapMade.com
-      */
-
-      /*--------------------------------------------------------------
-      # Font & Color Variables
-      --------------------------------------------------------------*/
-      :root {
-          --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-          --heading-font: "Raleway", sans-serif;
-          --nav-font: "Poppins", sans-serif;
-        
-          --background-color: #ffffff;
-          --default-color: #444444;
-          --heading-color: #222222;
-          --accent-color: #ff9100;
-          --surface-color: #ffffff;
-          --contrast-color: #ffffff;
-        
-          --nav-color: #444444;
-          --nav-hover-color: #34b7a7;
-          --nav-mobile-background-color: #ffffff;
-          --nav-dropdown-background-color: #ffffff;
-          --nav-dropdown-color: #444444;
-          --nav-dropdown-hover-color: #ff9100;
-        }
-        
-        /* Smooth scroll */
-        :root {
-          scroll-behavior: smooth;
-        }
-                /*--------------------------------------------------------------
-      # Global Header
-      --------------------------------------------------------------*/
-      .header {
-          color: var(--default-color);
-          background-color: var(--background-color);
-          padding: 15px 0;
-          transition: all 0.5s;
-          z-index: 997;
-          box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
-        }
-        
-        .header .logo {
-          line-height: 1;
-        }
-        
-        .header .logo img {
-          max-height: 36px;
-          margin-right: 8px;
-        }
-        
-        .header .logo h1 {
-          font-size: 32px;
-          margin: 0;
-          font-weight: 300;
-          text-transform: uppercase;
-          color: var(--heading-color);
-        }
-        
-        .header .header-social-links {
-          padding-right: 15px;
-        }
-        
-        .header .header-social-links a {
-          color: color-mix(in srgb, var(--default-color), transparent 40%);
-          padding-left: 6px;
-          display: inline-block;
-          transition: 0.3s;
-          font-size: 16px;
-        }
-        
-        .header .header-social-links a:hover {
-          color: var(--accent-color);
-        }
-        
-        .header .header-social-links a i {
-          line-height: 0px;
-        }
-        
-        @media (max-width: 1200px) {
-          .header .logo {
-            order: 1;
-          }
-        
-          .header .header-social-links {
-            order: 2;
-          }
-        
-          .header .navmenu {
-            order: 3;
-          }
-        }
-        
-        /*--------------------------------------------------------------
-        # Navigation Menu
-        --------------------------------------------------------------*/
-        /* Desktop Navigation */
-        @media (min-width: 1200px) {
-          .navmenu {
-            padding: 0;
-          }
-        
-          .navmenu ul {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            list-style: none;
-            align-items: center;
-          }
-        
-          .navmenu li {
-            position: relative;
-          }
-        
-          .navmenu>ul>li {
-            white-space: nowrap;
-            padding: 15px 14px;
-          }
-        
-          .navmenu>ul>li:last-child {
-            padding-right: 0;
-          }
-        
-          .navmenu a,
-          .navmenu a:focus {
-            color: var(--nav-color);
-            font-size: 15px;
-            padding: 0 2px;
-            font-family: var(--nav-font);
-            font-weight: 400;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            white-space: nowrap;
-            transition: 0.3s;
-            position: relative;
-          }
-        
-          .navmenu a i,
-          .navmenu a:focus i {
-            font-size: 12px;
-            line-height: 0;
-            margin-left: 5px;
-            transition: 0.3s;
-          }
-        
-          .navmenu>ul>li>a:before {
-            content: "";
-            position: absolute;
-            height: 2px;
-            bottom: -6px;
-            left: 0;
-            background-color: var(--nav-hover-color);
-            visibility: hidden;
-            width: 0px;
-            transition: all 0.3s ease-in-out 0s;
-          }
-        
-          .navmenu a:hover:before,
-          .navmenu li:hover>a:before,
-          .navmenu .active:before {
-            visibility: visible;
-            width: 25px;
-          }
-        
-          .navmenu li:hover>a,
-          .navmenu .active,
-          .navmenu .active:focus {
-            color: var(--nav-hover-color);
-          }
-        
-          .navmenu .dropdown ul {
-            margin: 0;
-            padding: 10px 0;
-            background: var(--nav-dropdown-background-color);
-            display: block;
-            position: absolute;
-            visibility: hidden;
-            left: 14px;
-            top: 130%;
-            opacity: 0;
-            transition: 0.3s;
-            border-radius: 4px;
-            z-index: 99;
-            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-          }
-        
-          .navmenu .dropdown ul li {
-            min-width: 200px;
-          }
-        
-          .navmenu .dropdown ul a {
-            padding: 10px 20px;
-            font-size: 15px;
-            text-transform: none;
-            color: var(--nav-dropdown-color);
-          }
-        
-          .navmenu .dropdown ul a i {
-            font-size: 12px;
-          }
-        
-          .navmenu .dropdown ul a:hover,
-          .navmenu .dropdown ul .active:hover,
-          .navmenu .dropdown ul li:hover>a {
-            color: var(--nav-dropdown-hover-color);
-          }
-        
-          .navmenu .dropdown:hover>ul {
-            opacity: 1;
-            top: 100%;
-            visibility: visible;
-          }
-        
-          .navmenu .dropdown .dropdown ul {
-            top: 0;
-            left: -90%;
-            visibility: hidden;
-          }
-        
-          .navmenu .dropdown .dropdown:hover>ul {
-            opacity: 1;
-            top: 0;
-            left: -100%;
-            visibility: visible;
-          }
-        }
-        
-        /* Mobile Navigation */
-        @media (max-width: 1199px) {
-          .mobile-nav-toggle {
-            color: var(--nav-color);
-            font-size: 28px;
-            line-height: 0;
-            margin-right: 10px;
-            cursor: pointer;
-            transition: color 0.3s;
-          }
-        
-          .navmenu {
-            padding: 0;
-            z-index: 9997;
-          }
-        
-          .navmenu ul {
-            display: none;
-            list-style: none;
-            position: absolute;
-            inset: 60px 20px 20px 20px;
-            padding: 10px 0;
-            margin: 0;
-            border-radius: 6px;
-            background-color: var(--nav-mobile-background-color);
-            border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-            box-shadow: none;
-            overflow-y: auto;
-            transition: 0.3s;
-            z-index: 9998;
-          }
-        
-          .navmenu a,
-          .navmenu a:focus {
-            color: var(--nav-dropdown-color);
-            padding: 10px 20px;
-            font-family: var(--nav-font);
-            font-size: 17px;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            white-space: nowrap;
-            transition: 0.3s;
-          }
-        
-          .navmenu a i,
-          .navmenu a:focus i {
-            font-size: 12px;
-            line-height: 0;
-            margin-left: 5px;
-            width: 30px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            transition: 0.3s;
-            background-color: color-mix(in srgb, var(--accent-color), transparent 90%);
-          }
-        
-          .navmenu a i:hover,
-          .navmenu a:focus i:hover {
-            background-color: var(--accent-color);
-            color: var(--contrast-color);
-          }
-        
-          .navmenu a:hover,
-          .navmenu .active,
-          .navmenu .active:focus {
-            color: var(--nav-dropdown-hover-color);
-          }
-        
-          .navmenu .active i,
-          .navmenu .active:focus i {
-            background-color: var(--accent-color);
-            color: var(--contrast-color);
-            transform: rotate(180deg);
-          }
-        
-          .navmenu .dropdown ul {
-            position: static;
-            display: none;
-            z-index: 99;
-            padding: 10px 0;
-            margin: 10px 20px;
-            background-color: var(--nav-dropdown-background-color);
-            transition: all 0.5s ease-in-out;
-          }
-        
-          .navmenu .dropdown ul ul {
-            background-color: rgba(33, 37, 41, 0.1);
-          }
-        
-          .navmenu .dropdown>.dropdown-active {
-            display: block;
-            background-color: rgba(33, 37, 41, 0.03);
-          }
-        
-          .mobile-nav-active {
-            overflow: hidden;
-          }
-        
-          .mobile-nav-active .mobile-nav-toggle {
-            color: #fff;
-            position: absolute;
-            font-size: 32px;
-            top: 15px;
-            right: 15px;
-            margin-right: 0;
-            z-index: 9999;
-          }
-        
-          .mobile-nav-active .navmenu {
-            position: fixed;
-            overflow: hidden;
-            inset: 0;
-            background: rgba(33, 37, 41, 0.8);
-            transition: 0.3s;
-          }
-        
-          .mobile-nav-active .navmenu>ul {
-            display: block;
-          }
-        }
-        
-        /*--------------------------------------------------------------
-        # Global Footer
-        --------------------------------------------------------------*/
-        .footer {
-          color: var(--default-color);
-          background-color: var(--background-color);
-          font-size: 14px;
-          padding: 40px 0;
-          position: relative;
-        }
-        
-        .footer .copyright p {
-          margin-bottom: 0;
-        }
-        
-        .footer .social-links {
-          margin-top: 20px;
-        }
-        
-        .footer .social-links a {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
-          font-size: 16px;
-          color: color-mix(in srgb, var(--default-color), transparent 50%);
-          margin: 0 5px;
-          transition: 0.3s;
-        }
-        
-        .footer .social-links a:hover {
-          color: var(--accent-color);
-          border-color: var(--accent-color);
-        }
-        
-        .footer .credits {
-          margin-top: 10px;
-          font-size: 13px;
-          text-align: center;
-        }
-
-        /*--------------------------------------------------------------
-        # Hero Section
-        --------------------------------------------------------------*/
-        .hero-section {
-          min-height: calc(130vh - 82px);
-          position: relative;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 80px 0;
-          background-image: url('../img/hero-bg.png');
-          background-size: cover;
-          background-position: center;
-        }
-        
-        .hero-section:before {
-          content: "";
-          position: absolute;
-          inset: 0;
-          z-index: 1;
-        }
-        
-        .hero-content {
-          position: relative;
-          z-index: 2;
-          text-align: center;
-          color: var(--contrast-color);
-        }
-        
-        .hero-content h1 {
-          font-size: 48px;
-          font-weight: 700;
-          margin-bottom: 10px;
-        }
-        
-        .hero-content p {
-          font-size: 24px;
-          color: var(--contrast-color);
-        }
-        
-        .cta-buttons button {
-          color: var(--contrast-color);
-          background: var(--accent-color);
-          font-family: var(--heading-font);
-          text-transform: uppercase;
-          font-weight: 600;
-          font-size: 12px;
-          padding: 12px 40px;
-          border: none;
-          border-radius: 50px;
-          margin: 10px 5px;
-          transition: 0.5s;
-        }
-        
-        .cta-buttons button:hover {
-          background: color-mix(in srgb, var(--accent-color) 90%, white 20%);
-        }
-        
-        @media (max-width: 768px) {
-          .hero-content h1 {
-            font-size: 32px;
-          }
-        
-          .hero-content p {
-            font-size: 18px;
-          }
-        }
-        
-        /*--------------------------------------------------------------
-        # About Section
-        --------------------------------------------------------------*/
-        .about-section {
-          padding: 60px 0;
-        }
-        
-        .about-photo {
-          width: 100%;
-          height: auto;
-          object-fit: cover;
-          max-height: 400px;
-        }
-        
-        .about-content {
-          padding: 30px;
-        }
-        
-        .about-content h2 {
-          font-size: 32px;
-          font-weight: 700;
-          margin-bottom: 20px;
-          position: relative;
-        }
-        
-        .about-content h2:after {
-          content: "";
-          position: absolute;
-          display: block;
-          width: 50px;
-          height: 3px;
-          background: var(--accent-color);
-          bottom: -10px;
-          left: 0;
-        }
-        
-        .about-content p {
-          font-size: 16px;
-          line-height: 1.6;
-        }
-        
-        @media (max-width: 575px) {
-          .about-content {
-            padding: 20px;
-          }
-        }
-        
-        /*--------------------------------------------------------------
-        # Skills Section
-        --------------------------------------------------------------*/
-        .skills-section {
-          padding: 60px 0;
-          text-align: center;
-        }
-        
-        .skills-section h2 {
-          font-size: 32px;
-          font-weight: 700;
-          margin-bottom: 40px;
-          position: relative;
-        }
-        
-        .skills-section h2:after {
-          content: "";
-          position: absolute;
-          display: block;
-          width: 50px;
-          height: 3px;
-          background: var(--accent-color);
-          bottom: -10px;
-          left: 0;
-          right: 0;
-          margin: auto;
-        }
-        
-        .skills-icons {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-          gap: 20px;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-        
-        .skill {
-          text-align: center;
-        }
-        
-        .skill-icon {
-          width: 60px;
-          height: 60px;
-          object-fit: contain;
-          margin-bottom: 10px;
-          transition: transform 0.3s;
-        }
-        
-        .skill:hover .skill-icon {
-          transform: scale(1.1);
-        }
-        
-        .skill p {
-          margin: 0;
-          font-size: 14px;
-          font-family: var(--heading-font);
-        }
-        
-        /*--------------------------------------------------------------
-        # Projects Section
-        --------------------------------------------------------------*/
-        .projects-section {
-          padding: 60px 0;
-          text-align: center;
-        }
-        
-        .projects-section h2 {
-          font-size: 32px;
-          font-weight: 700;
-          margin-bottom: 40px;
-          position: relative;
-        }
-        
-        .projects-section h2:after {
-          content: "";
-          position: absolute;
-          display: block;
-          width: 50px;
-          height: 3px;
-          background: var(--accent-color);
-          bottom: -10px;
-          left: 0;
-          right: 0;
-          margin: auto;
-        }
-        
-        .project-cards {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-          gap: 20px;
-          max-width: 1200px;
-          margin: 0 auto;
-        }
-        
-        .card-container {
-          perspective: 1000px;
-        }
-        
-        .card {
-          background: var(--surface-color);
-          box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.1);
-          border-radius: 5px;
-          overflow: hidden;
-          transition: transform 0.3s;
-        }
-        
-        .card:hover {
-          transform: translateY(-5px);
-        }
-        
-        .card__image {
-          width: 100%;
-          height: 200px;
-          object-fit: cover;
-        }
-        
-        .content {
-          padding: 20px;
-          text-align: left;
-        }
-        
-        .content .heading {
-          font-size: 18px;
-          font-weight: 600;
-          margin-bottom: 10px;
-          color: var(--heading-color);
-        }
-        
-        .content p {
-          font-size: 14px;
-          color: color-mix(in srgb, var(--default-color), transparent 30%);
-        }
-        
-        .card-button {
-          display: block;
-          width: 100%;
-          padding: 10px;
-          background: var(--accent-color);
-          color: var(--contrast-color);
-          border: none;
-          border-radius: 0 0 5px 5px;
-          font-family: var(--heading-font);
-          font-size: 14px;
-          text-transform: uppercase;
-          transition: background 0.3s;
-        }
-        
-        .card-button:hover {
-          background: color-mix(in srgb, var(--accent-color), transparent 25%);
-        }
-        
-        /*--------------------------------------------------------------
-        # Footer
-        --------------------------------------------------------------*/
-        .footer-section {
-          background-color: var(--background-color);
-          padding: 40px 0;
-          font-size: 14px;
-          text-align: center;
-        }
-        
-        .footer-content p {
-          margin: 10px 0;
-        }
-        
-        .footer-card {
-          display: flex;
-          justify-content: center;
-          gap: 10px;
-          margin-bottom: 20px;
-        }
-        
-        .social-link1, .social-link2, .social-link3, .social-link4, .social-link5 {
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          color: color-mix(in srgb, var(--default-color), transparent 50%);
-          transition: 0.3s;
-        }
-        
-        .social-link1:hover, .social-link2:hover, .social-link3:hover, .social-link4:hover, .social-link5:hover {
-          color: var(--accent-color);
-          border-color: var(--accent-color);
-        }
-        
-        .social-link1 svg, .social-link2 svg, .social-link3 svg, .social-link4 svg, .social-link5 svg {
-          width: 20px;
-          height: 20px;
-        }
-    </style>
+    <title>Andromeda Ghost Game</title>
+    <link rel="icon" type="image/png" href="img/logo/Andromeda Ghost Logo pink.png">
+    <link rel="apple-touch-icon" href="img/logo/Andromeda Ghost Logo pink.png">
+    <link rel="stylesheet" href="css/styles.css?v=20260225">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section -->
-    <header id="header" class="header d-flex align-items-center light-background sticky-top">
-        <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-    
-          <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="assets/img/logo.png" alt=""> -->
-            <h1 class="sitename">Sangwani Mkandawire</h1>
-          </a>
-    
-          <nav id="navmenu" class="navmenu">
-            <ul>
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="aboutme.html">About</a></li>
-              <li><a href="skills.html">Skills</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li class="dropdown"><a href="#"><span>Highlight</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="https://github.com/Sangwani-J0E/Sentiment-Analysis-Project">sentiment Analysis</a></li>
-                  <li><a href="https://github.com/Sangwani-J0E/grocery_store_system">Grocery Store</a></li>
-                  <li><a href="https://github.com/Sangwani-J0E/AI-Department-Pursuits-System---Automated-Lecture-Assignment-System">AI Pursuits</a></li>
-                  <li><a href="https://github.com/Sangwani-J0E/Criminal-Management-System">Criminal Management-System </a></li>
-                </ul>
-              </li>
-              <li><a href="contact.html">Contact</a></li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="nav-logo">
+                <img src="img/logo/Andromeda Ghost Logo Black.png" alt="AndromedaGhost Games Logo">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="skills.html" class="nav-link">SKILLS</a></li>
+                <li><a href="#games" class="nav-link">GAMES</a></li>
+                <li><a href="timeline.html" class="nav-link">TIMELINE</a></li>
             </ul>
-            <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-          </nav>
-    
-          <div class="header-social-links">
-            <a href="https://www.facebook.com/share/1Xxosmx9xh/" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/smk_the_second?igsh=MWl0OWJvaXM5ODF0aw==" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/sangwani-mkandawire514/" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
-    
+            <div class="nav-actions">
+                <a href="#contact" class="nav-contact-btn">CONTACT</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+            </div>
         </div>
-    </header>
+    </nav>
+
+    <!-- Navbar toggle arrow (shown when navbar is hidden on scroll) -->
+    <div class="nav-toggle-arrow" aria-label="Show navigation">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 19v-14M5 12l7 7 7-7"/>
+        </svg>
+    </div>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <div class="cta-buttons">
-                <br><br>
-                <button><span class="text" href="projects.html">View My Work</span></button>
-                <br>
-                <button><span class="text" href="contact.html">Get In Touch</span></button>
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-top">
+        <div class="container">
+            <div class="hero-content">
+                    <h1 class="hero-title"><span class="hero-title-line1">ANDROMEDA</span><span class="hero-title-line2">GHOST</span></h1>
+                </div>
             </div>
+        </div>
+        <div class="hero-bottom">
+            <div class="hero-image-container">
+                <div class="hero-image-slideshow">
+                    <img src="img/hero/Hero1.png" alt="Hero image 1" class="hero-slide active">
+                    <img src="img/hero/Hero2.png" alt="Hero image 2" class="hero-slide">
+                    <img src="img/hero/Hero3.png" alt="Hero image 3" class="hero-slide">
+                    <img src="img/hero/Hero4.png" alt="Hero image 4" class="hero-slide">
+                    <img src="img/hero/Hero5.jpg" alt="Hero image 5" class="hero-slide">
+                </div>
+                <h2 class="hero-games-text">GAMES</h2>
+                <div class="hero-cards-container">
+                    <div class="hero-cards-row">
+                        <div class="hero-cards-left">
+                            <div class="hero-card hero-card-small hero-fact-card">
+                                <div class="hero-fact-text">Passionate Game Developer • Love Creating Immersive Experiences • Always Learning New Technologies</div>
+                            </div>
+                            <div class="hero-card hero-card-small hero-social-card">
+                                <a href="https://www.linkedin.com/in/sangwani-mkandawire514/" target="_blank" rel="noopener noreferrer" class="hero-social-icon" aria-label="LinkedIn">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.instagram.com/andromedaghost_games/#" target="_blank" rel="noopener noreferrer" class="hero-social-icon" aria-label="Instagram">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.tiktok.com/@andromedaghost13" target="_blank" rel="noopener noreferrer" class="hero-social-icon" aria-label="TikTok">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.youtube.com/@andromedaghostgames" target="_blank" rel="noopener noreferrer" class="hero-social-icon" aria-label="YouTube">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://wa.me/+265887631627" target="_blank" rel="noopener noreferrer" class="hero-social-icon" aria-label="WhatsApp">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hero-cards-right">
+                            <div class="hero-card">
+                                <img src="img/hero/Hero2.png" alt="Upcoming hero image 1" class="hero-card-image" id="hero-card-image-1">
+                            </div>
+                            <div class="hero-card">
+                                <img src="img/hero/Hero3.png" alt="Upcoming hero image 2" class="hero-card-image" id="hero-card-image-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
         </div>
     </section>
 
-    <section id="about" class="about-section">
-        <div class="row g-0">
-          <div class="col-md-8">
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
             <div class="about-content">
-                <div class="about-text">
-                    <h2 class="card-title">About Me</h2>
-                        <p>
-                            I am a passionate and self-driven computer science student and developer with a strong background in web development, game development, and application programming. I specialize in building clean, responsive, and user-friendly websites and applications using modern technologies like Python, JavaScript, Flask, and Unity.
+                <div class="about-text-column">
+                    <div class="about-heading">
+                        <div class="heading-stack">
+                            <span class="heading-word heading-about">ABOUT</span>
+                            <div class="heading-me-row">
+                                <span class="heading-word heading-me">ME</span>
+                                <div class="heading-button"></div>
+                            </div>
+                            <div class="heading-underline"></div>
+                        </div>
+                    </div>
+                    <div class="about-text-content">
+                        <p class="about-bio">
+                            I AM A 22 YEAR-OLD COMPUTER SCIENCE GRADUATE AND A PASSIONATE GAME DEVELOPER. I STARTED MAKING WHEN WAS 17, AND IVE ALWAYS ENJOYED STORY TELLING THROUGH GAMES. A SOFTWARE DEVELOPER BY PROFFESSION. I MAKE GAMES AS A HOBBY AND IM ALWAYS LOOKING TO IMPROVE MY SKILLS BY JOINING BOOTCAMPS (GRADUATED AFRICA COMICADE BOOTCAMP) AND COLLABORATING WITH OTHER CREATIVES THORUGH GAME JAMS AND GROUP PROJECTS.I HAVE MADE 5 PLAYABLE GAMES SO FAR, THE OTHER GAMES WE DONT TALK ABOU THEM :). THE FIRSTGAME I MADE WAS A MOBILE CALLED MAZE ADVENTURE, IT TAUGHT ME ALOT ABOUT WHAT GOES INTO GAME MAKING, I SPENT A MAJORITY OF THE TIME PARTICIPATING IN GAME JAMS LEARNING FUN AND WHACKY MECHANICS, A THING OR TWO MIGHT BE BROKEN BUT "WHAT ARE BUGS BUT UNINTENDED MECHANICS"
                         </p>
-                        <p>
-                            My journey into development began during my early university years at DMI-St John Baptist University, where I started building tools and websites for students and small businesses. Since then, I’ve completed multiple freelance projects and developed four full games using Unity and C#, continuously expanding my skills and love for creating functional digital solutions.
-                        </p>
-                        <p><small class="text-body-secondary">Last updated May 2025</small></p>
+                    </div>
+                </div>
+                <div class="about-image-column">
+                    <div class="about-image-container">
+                        <div class="main-image-wrapper">
+                            <div class="main-image">
+                                <img src="img/aboutme/Img1.jpg" alt="Sangwani Mkandawire" class="main-portrait">
+                            </div>
+                            <a href="timeline.html" class="expand-icon" aria-label="View timeline">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                            <div class="image-text-overlay">
+                                <button class="image-text-overlay-close" aria-label="Close overlay">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </button>
+                                <p class="image-text-overlay-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ic placerat neque, et ornare dui. Sed imperdiet urna sit amet mi elementum fringilla. Orci varius natoque penatibus et magnis dis parturient montes</p>
+                            </div>
+                            <div class="image-gallery">
+                                <div class="gallery-item" data-gallery-index="0" data-gallery-image="img/aboutme/Img1.jpg" data-gallery-text="A moment capturing my passion for game development and creative work.">
+                                    <img src="img/aboutme/Img1.jpg" alt="Gallery image 1">
+                                </div>
+                                <div class="gallery-item" data-gallery-index="1" data-gallery-image="img/aboutme/Img2.jpg" data-gallery-text="Showcasing my dedication to creating immersive gaming experiences.">
+                                    <img src="img/aboutme/Img2.jpg" alt="Gallery image 2">
+                                </div>
+                                <div class="gallery-item" data-gallery-index="2" data-gallery-image="img/aboutme/img6.jpg" data-gallery-text="Highlighting my journey as a Computer Science student and game developer.">
+                                    <img src="img/aboutme/img6.jpg" alt="Gallery image 3">
+                                </div>
+                                <div class="gallery-item" data-gallery-index="3" data-gallery-image="img/aboutme/img8.jpg" data-gallery-text="Another glimpse into my creative process and game development work.">
+                                    <img src="img/aboutme/img8.jpg" alt="Gallery image 4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-lorem-fullwidth">
+                    <p class="about-lorem">
+                        GROWTH ISNT ONLY ABOUT DOING NEW THINGS BUT ALSO IMRPOVING UPON THE OLD ONES. I STRIVE ON GROWING IN ALL ASPECTS OF GAME MAKING. AS A SOLO GAME DEVELOPER IN A SMALL AFRICAN COUNTRY THERE ARE A LOT OF CHALLENGES BUT MAKING SOMETHING THAT PEOPLE LOVE THROUGHOUT ALL OF THAT BRINGS JOY THAT NOTHING ELSE CAN REPLICATE. IVE HAD THE PRIVILEGDE OF GOING TO A CYBER EXPO AND PRESENTING MY GAME INFRONT OF A LARGE CROWD AND IM ALSO TEACHING OTHERS THE CRAFT THROUGH NEXTGEN ACADEMY. THE AIM IS TO GO ABOVE AND BEYOND. AS GAME DEVELOPERS WE MUST NEVER STOP PLAYING GAMES.
+                    </p>
                 </div>
             </div>
-          </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <h2>Skills</h2>
-        <div class="skills-icons">
-            <div class="skill">
-                <a href="https://www.google.com/search?q=HTML5" target="_blank">
-                    <img src="img/Skill/HTML5.png" alt="HTML" class="skill-icon">
-                    <p>HTML</p>
-                </a>
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="skills-heading">
+                <h2 class="skills-title">MY SKILLS</h2>
+                <div class="skills-title-card">
+                    <img src="img/logo/Andromeda Ghost Logo Black.png" alt="Skills card">
+                </div>
+                <span class="skills-title-repeat">MY SKILLS MY SKILLS MY SKILLS MY SKILLS</span>
             </div>
-            <div class="skill">
-                <a href="https://www.google.com/search?q=CSS" target="_blank">
-                    <img src="img/Skill/CSS.png" alt="CSS" class="skill-icon">
-                    <p>CSS</p>
-                </a>
-            </div>
-            <div class="skill">
-                <a href="https://www.google.com/search?q=JavaScript" target="_blank">
-                    <img src="img/Skill/JavaScript.png" alt="JavaScript" class="skill-icon">
-                    <p>JavaScript</p>
-                </a>
-            </div>
-            <div class="skill">
-                <a href="https://www.google.com/search?q=C+programming" target="_blank">
-                    <img src="img/Skill/C.png" alt="C programming" class="skill-icon">
-                    <p>C Language</p>
-                </a>
-            </div>
-            <div class="skill">
-                <a href="https://www.google.com/search?q=C%2B%2B+programming" target="_blank">
-                    <img src="img/Skill/C++.png" alt="C++" class="skill-icon">
-                    <p>C++ Language</p>
-                </a>
-            </div>
-            <div class="skill">
-                <a href="https://www.google.com/search?q=C%23+programming" target="_blank">
-                    <img src="img/Skill/C-sharp.png" alt="C Sharp" class="skill-icon">
-                    <p>C# Language</p>
-                </a>
-            </div>
-            <div class="skill">
-                <a href="https://www.google.com/search?q=Java+programming" target="_blank">
-                    <img src="img/Skill/Java.png" alt="Java" class="skill-icon">
-                    <p>Java</p>
-                </a>
-            </div>
-            <div class="skill">
-                <a href="https://www.google.com/search?q=PHP+programming" target="_blank">
-                    <img src="img/Skill/PHP.png" alt="PHP" class="skill-icon">
-                    <p>PHP</p>
-                </a>
-            </div>
-            <div class="skill">
-                <a href="https://www.google.com/search?q=MySQL" target="_blank">
-                    <img src="img/Skill/mysql.png" alt="MySQL" class="skill-icon">
-                    <p>MySQL</p>
-                </a>
-            </div>
-            <div class="skill">
-                <a href="https://www.google.com/search?q=Python+programming" target="_blank">
-                    <img src="img/Skill/Python.png" alt="Python" class="skill-icon">
-                    <p>Python</p>
-                </a>
+            <div class="skills-content">
+                <div class="skills-rows">
+                    <div class="skill-row">
+                        <div class="skill-block" style="background-image: url('img/skills/game design.jpg'); background-size: cover; background-position: center;">
+                            <a href="skills.html#skill-game-design" class="skill-pink-circle" aria-label="View Game Design skills">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="skill-text">
+                            <p><span class="skill-title">GAME DESIGN</span> I POSSESS GAME DESIGN SKILLS. I AM ABLE TO PRODUCE A WELL DETAILED GAME DESIGN DOCUMENT WITH ALL MECHANICS AND BEST IMPLEMENTATION PRACTICES. DEPENDING ON THE PLATFORM CORRECT OPTIMISATION TECHNIQUES ARE USED. OVER THE YEARS IVE LEARNT THAT GAME DESIGN NOT ONLY COVERS THE TECCHNICAL SIDE OF A PROJECT BUT ALSO THE USER FEEL HAS TO BE PUT INTO CONDERATION, ASWELL AS GAME PURPOSE. A SMALL GAME WITH A CLEAR VISION WILL ALWAYS BE BETTER THAN A BIG GAME THAT HAS NO VISION AND DIRECTION.</p>
+                        </div>
+                        <div class="skill-bar"></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-block" style="background-image: url('img/skills/programming.png'); background-size: cover; background-position: center;">
+                            <a href="skills.html#skill-programming" class="skill-pink-circle" aria-label="View Programming skills">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="skill-text">
+                            <p><span class="skill-title">PROGRAMMING</span> AS A SOFTWARE DEVELOPER I AM EFFIECIENT IN WRITTING CLEAN AND MANAGEABLE CODE IN JAVA, C#, HTML, CSS, PYTHON, PHP, JAVASCRIPT, AND C++. I HAVE WORKED WITH VENDORME TECHNOLOGIES MALAWI FOR 3 YEARS TO DATE AS A SOFTWARE DEVELOPER. I HAVE MADE VARIOUS WEBSITES ASWELL AS COMPUTER SOFTWARES FOR CLIENTS AND INHOUSE SYSTEMS ASWELL. MY BEST WORK WAS ON HE FIRST EVER SPORTS APPLICATION FOR MY COUNTRY WHICH WAS SLCMW (WWW.SLCMW.COM)</p>
+                        </div>
+                        <div class="skill-bar"></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-block" style="background-image: url('img/skills/3d.jpg'); background-size: cover; background-position: center;">
+                            <a href="skills.html#skill-3d-modelling" class="skill-pink-circle" aria-label="View 3D Modelling skills">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="skill-text">
+                            <p><span class="skill-title">3D MODELLING</span> I BEGAN MY WHOLE JOURNEY WITH 3D MODELLING. I HAVE BASIC SKILLS IN RIGGING AND ANIMATING. I AM ABLE TO MODEL MY OWN GAME ENVIRONEMT PIECES FOR MY GAMES AND TEXTURE THEM USING AN ATLAS. JUST TO MAKE SURE EVERYTHING IS COHESIVE IN THE GAME. AS AN ARTIST TEXTURE PAITING IS ALSO SOMETHING I KNOW VERY WELL IN BLENDER. MY TOPOLOGY STILL REQUIRES SOME WORK BUT OVERALL I THINK IT DOES THE JOB.</p>
+                        </div>
+                        <div class="skill-bar"></div>
+                    </div>
+                    <div class="skill-row">
+                        <div class="skill-block" style="background-image: url('img/skills/Level Design.png'); background-size: cover; background-position: center;">
+                            <a href="skills.html#skill-game-design" class="skill-pink-circle" aria-label="View Level Design skills">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="skill-text">
+                            <p><span class="skill-title">LEVEL DESIGN</span> LEVEL DESIGNING IN A WAY THAT MATTERS TAKES SKILL AND KNOWLEDGE. I LEARNT THE ART OF LEVEL DESIGN FROM ONLINE RESOURCES. MY PREVIOUS GAMES DO NOT BEST REPRESENT THIS BUT MY MOST RECENT GAMES SHOW A CLEAR DISTINCTON BETWEEN KNOWING WHAT TO ADD TO YOUR GAME AND KNOWING WHAT NOT TO ADD. ANOTHER IMPORTANT THING IS THE ENVIRONMENT INTERACTION. HOW THE ENVIRONMENT REACTS TO YOU AS THE PLAYER AND IT REACTS TO ITSELF. ALL THESE THINGS MAKE A GOOD LEVEL.</p>
+                        </div>
+                        <div class="skill-bar"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Featured Projects Section 
-    <section id="projects" class="projects-section">
-        <h2>Featured Projects</h2>  
-          <div class="project-cards">
-            <div class="card-container">
-                <div class="card">
-                    <div class="img-content">
-                        <img src="img/System/Tweet SentApp 1.png" alt="Project 1" class="card__image">
+    <!-- Games Section -->
+    <section id="games" class="games">
+        <div class="container">
+            <div class="games-content">
+                <div class="game-item">
+                    <h2 class="game-title">
+                        <span class="game-title-text">UNDERGROUND</span>
+                        <div class="game-title-card">
+                            <img src="img/Games/Underground Turtle Racing/img1.jpg" alt="Game card">
+                        </div>
+                        <span class="game-title-text">TURTLE RACING</span>
+                    </h2>
+                    <div class="game-cards-container">
+                        <div class="game-cards-left">
+                            <div class="game-card">
+                                <div class="game-image">
+                                    <img src="img/Games/Underground Turtle Racing/img1.jpg" alt="Underground Turtle Racing">
+                                    <div class="game-placeholder-circle"></div>
+                                    <a href="https://andromedaghostgames.itch.io/" target="_blank" rel="noopener noreferrer" class="game-placeholder-feature">Underground Turtle Racing</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-cards-right">
+                            <div class="game-card game-card-top">
+                                <div class="game-card-top-images">
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/Underground Turtle Racing/img2.jpg" alt="Game image 1">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/Underground Turtle Racing/img3.jpg" alt="Game image 2">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/Underground Turtle Racing/img4.jpg" alt="Game image 3">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="game-card-top-text">
+                                    <p>Race through underground tunnels in this exciting game. Compete against other turtles and master the challenging race tracks. Chose Whether to be the one saves your legacy or be the most successful turtle in the shadows</p>
+                                </div>
+                            </div>
+                            <div class="game-card game-card-bottom">
+                                <div class="game-card-bottom-content">
+                                    <h3 class="game-card-bottom-title"><span>UNDERGROUND TURTLE RACING -</span></h3>
+                                    <p class="game-card-bottom-text"> 
+                                        Devloped in 2025 - Platform: PC (Demo now out on itch)
+                                        <br>
+                                        Underground turtle racing is a game about racing turtles. It is set in a world where there are only turtles which have wheels. And for entertainment the rich host a series of race events for some of the turtles to compete in. But in the unknown there is another group focusing on the racing culture and how tough it is to be the best. In this game you are faced with the choice of either being famous or rich and successful. While fame brings respect your name, Money is power and the choice is all yours. The game is still in development stage, you can follow the progress on my socials. </p>
+                                </div>
+                                <div class="game-card-bottom-feature">
+                                    <p>Compete in intense racing action with customizable turtles, unlockable tracks, multiple game modes, and unique power-ups.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="content">
-                        <p class="heading" style="color: black;">Project 1</p>
-                        <p style="color: black;">Brief description of the project goes here. Highlight what makes it special.</p>
+                </div>
+                <div class="game-item">
+                    <h2 class="game-title">
+                        <span class="game-title-text">MAZE</span>
+                        <div class="game-title-card">
+                            <img src="img/Games/Maze Adenture/img1.png" alt="Game card">
+                        </div>
+                        <span class="game-title-text">ADVENTURE - MAZE</span>
+                    </h2>
+                    <div class="game-cards-container">
+                        <div class="game-cards-left">
+                            <div class="game-card">
+                                <div class="game-image">
+                                    <img src="img/Games/Maze Adenture/img1.png" alt="Maze Adventure">
+                                    <div class="game-placeholder-circle"></div>
+                                    <a href="https://andromedaghostgames.itch.io/" target="_blank" rel="noopener noreferrer" class="game-placeholder-feature">Maze Adventure</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-cards-right">
+                            <div class="game-card game-card-top">
+                                <div class="game-card-top-images">
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/Maze Adenture/img2.png" alt="Game image 1">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/Maze Adenture/img3.png" alt="Game image 2">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/Maze Adenture/img4.png" alt="Game image 3">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="game-card-top-text">
+                                    <p>This is my first game and also my first mobile game in general. The game is a maze game with a goal of collecting a key and finding a door to escape while dodging enemies that case you through the map.</p>
+                                </div>
+                            </div>
+                            <div class="game-card game-card-bottom">
+                                <div class="game-card-bottom-content">
+                                    <h3 class="game-card-bottom-title"><span>MAZE ADVENTURE -</span></h3>
+                                    <p class="game-card-bottom-text">Developed in 2023,
+                                        Platform: Mobile
+                                        <br>
+                                        Description: a mobile game focusing on puzzles and mazes. The goal is to obtain a key that opens a door so that you progress while avoiding monsters. for a first game project i was really proud of this one and i think it still holds up when you put into consideration that its my first game. i would make improvements on it if i hadnt lost the game project. But i learnt alot working on this and it gave me the confidence to work on more titles
+                                        <br>
+                                        Game mechanic: Click to move.</p>
+                                </div>
+                                <div class="game-card-bottom-feature">
+                                    <p>Game mechanic: Move charatcer using a tap option and find unique qays of escaping enemies and collecting keys</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <button class="card-button">More info</button>
+                </div>
+                <div class="game-item">
+                    <h2 class="game-title">
+                        <div class="game-title-card">
+                            <img src="img/Games/Bridged Humans/img1.png" alt="Game card">
+                        </div>
+                        <span class="game-title-text">BRIDGED HUMANS - BRIDGED</span>
+                    </h2>
+                    <div class="game-cards-container">
+                        <div class="game-cards-left">
+                            <div class="game-card">
+                                <div class="game-image">
+                                    <img src="img/Games/Bridged Humans/img1.png" alt="Bridged Humans">
+                                    <div class="game-placeholder-circle"></div>
+                                    <a href="https://andromedaghostgames.itch.io/" target="_blank" rel="noopener noreferrer" class="game-placeholder-feature">Bridged Humans</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-cards-right">
+                            <div class="game-card game-card-top">
+                                <div class="game-card-top-images">
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/Bridged Humans/img2.png" alt="Game image 1">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/Bridged Humans/img3.png" alt="Game image 2">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/Bridged Humans/img4.png" alt="Game image 3">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="game-card-top-text">
+                                    <p>In this game you play as two little characters and these characters are connected via a rope you are tasked to sole puzzles while making sure that the rope does not break and you must find creative solutions to finish the levels.</p>
+                                </div>
+                            </div>
+                            <div class="game-card game-card-bottom">
+                                <div class="game-card-bottom-content">
+                                    <h3 class="game-card-bottom-title"><span>BRIDGED HUMANS -</span></h3>
+                                    <p class="game-card-bottom-text">Developed in 2025 - Platform: PC
+                                        <br>
+                                        The game was a game jam game and it was made in 7 days. The theme of the game jam was connect and i tackled this theme by having two connected characters that are tasked to solve various puzzles in order to escpase rooms. There is a rope between the characters that breaks when you stray too far from each other. The character not being used will follow you automcatically which you quickly learn that its all helpful in some cases
+                                        <br>
+                                        The Game's first level is a bit buggy when it comes to grabbing the wheel so you might need to be creative on that. but the other levels work fine so maybe try those first
+                                    </p>
+                                </div>
+                                <div class="game-card-bottom-feature">
+                                    <p>Game Mechanics: Moving and Jumping. Switching Characters. Grabbing items and levers. Maintain Rope Tension through Distance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-item">
+                    <h2 class="game-title">
+                        <span class="game-title-text">THE FALL</span>
+                        <div class="game-title-card">
+                            <img src="img/Games/The Fall/img1.jpg" alt="Game card">
+                        </div>
+                        <div class="game-title-card">
+                            <img src="img/Games/The Fall/img2.png" alt="Game card">
+                        </div>
+                        <span class="game-title-text">the fall</span>
+                    </h2>
+                    <div class="game-cards-container">
+                        <div class="game-cards-left">
+                            <div class="game-card">
+                                <div class="game-image">
+                                    <img src="img/Games/The Fall/img1.jpg" alt="The Fall">
+                                    <div class="game-placeholder-circle"></div>
+                                    <a href="https://andromedaghostgames.itch.io/tf-dream" target="_blank" rel="noopener noreferrer" class="game-placeholder-feature">The Fall: Dream</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-cards-right">
+                            <div class="game-card game-card-top">
+                                <div class="game-card-top-images">
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/The Fall/img2.png" alt="Game image 1">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/The Fall/img3.png" alt="Game image 2">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/The Fall/img4.png" alt="Game image 3">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="game-card-top-text">
+                                    <p>A PC game about falling. You pass through various objects while changing fall speed and doing a number of tricks to avoid contact with objects.</p>
+                                </div>
+                            </div>
+                            <div class="game-card game-card-bottom">
+                                <div class="game-card-bottom-content">
+                                    <h3 class="game-card-bottom-title"><span>THE FALL: DREAM -</span></h3>
+                                    <p class="game-card-bottom-text">Developed in 2024, Platform: PC (Game jam entry. Honorable mentions)
+                                        <br>
+                                        The fall is a PC game about falling (Cliche right). You pass through various object while changing fall speed and doing a. number of tricks to avoid contact with objects. The theme of the jam was falling and i made a game that was exactly what the theme said. Its not one of my most creative or well thought out games but it is deifenitly a learning point when it comes to shaders and visuals. Even though it was in the honorable mentions there were great games in the jam and i was previledged to particiapate.
+                                        <br>
+                                        I suggest checking it out for the animations and the key combination mechanics.    
+                                    </p>
+                                </div>
+                                <div class="game-card-bottom-feature">
+                                    <p>Game mechanic: Tricks through various key combinations and holding specified keys. Developed in 2024 as a Game jam entry (Honorable mentions).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-item">
+                    <h2 class="game-title">
+                        <span class="game-title-text">SHADOWS</span>
+                        <div class="game-title-card">
+                            <img src="img/Games/Shadows Of Solitude/img1.png" alt="Game card">
+                        </div>
+                        <span class="game-title-text">F SOLITUDE</span>
+                    </h2>
+                    <div class="game-cards-container">
+                        <div class="game-cards-left">
+                            <div class="game-card">
+                                <div class="game-image">
+                                    <img src="img/Games/Shadows Of Solitude/img1.png" alt="Shadows of Solitude">
+                                    <div class="game-placeholder-circle"></div>
+                                    <a href="https://andromedaghostgames.itch.io/shadows-of-solitude" target="_blank" rel="noopener noreferrer" class="game-placeholder-feature">Shadows of Solitude</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-cards-right">
+                            <div class="game-card game-card-top">
+                                <div class="game-card-top-images">
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/Shadows Of Solitude/img2.png" alt="Game image 1">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/Shadows Of Solitude/img3.png" alt="Game image 2">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/Shadows Of Solitude/img4.png" alt="Game image 3">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="game-card-top-text">
+                                    <p>You open your eyes to a labyrinth of darkness, a place forgotten by time, where every shadow hides a secret and every step could be your last. With traps and puzzles hidden behind doors this is the game for a horror fanatic</p>
+                                </div>
+                            </div>
+                            <div class="game-card game-card-bottom">
+                                <div class="game-card-bottom-content">
+                                    <h3 class="game-card-bottom-title"><span>SHADOWS OF SOLITUDE -</span></h3>
+                                    <p class="game-card-bottom-text">A first-person adventure-survival game that pits you against a sinister adventure of discovery, blending puzzle-solving and stealth. You get to piece together the story behind your awakening in a dark forest and get to figure out what is happening. you find a door in the woods and when you entre the house you realise the house is bigger than it seemed on the outside and it is a filled with traps and hidden keys and things you have to get through inorder to escape. the blend of horror and puzzles is something that made me like working on this</p>
+                                </div>
+                                <div class="game-card-bottom-feature">
+                                    <p>Game mechanic: Navigating puzzles e.g. Lockpicking, moving Objects, Rotating Portraits, triggering hidden mechanics. Developed in 2025 as part of the Africa Comicade Project.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="game-item">
+                    <h2 class="game-title">
+                        <span class="game-title-text">STRANGE ECHOES</span>
+                        <div class="game-title-card">
+                            <img src="img/Games/Strange Echoes/img1.png" alt="Game card">
+                        </div>
+                        <span class="game-title-text">strange echoes</span>
+                    </h2>
+                    <div class="game-cards-container">
+                        <div class="game-cards-left">
+                            <div class="game-card">
+                                <div class="game-image">
+                                    <img src="img/Games/Strange Echoes/img1.png" alt="Strange Echoes">
+                                    <div class="game-placeholder-circle"></div>
+                                    <a href="https://m.youtube.com/@andromedaghostgames" target="_blank" rel="noopener noreferrer" class="game-placeholder-feature">Strange Echoes</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-cards-right">
+                            <div class="game-card game-card-top">
+                                <div class="game-card-top-images">
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/Strange Echoes/img2.png" alt="Game image 1">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/Strange Echoes/img3.png" alt="Game image 2">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="game-card-top-image">
+                                        <img src="img/Games/Strange Echoes/img4.png" alt="Game image 3">
+                                        <button class="game-image-expand" aria-label="Expand image">
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="game-card-top-text">
+                                    <p>This is an ongoing big project I'm making. This game aims to be an adventure game. Videos and Dev logs are available on YouTube right now. Im still going to put it here in case i get the energy to finish it one day</p>
+                                </div>
+                            </div>
+                            <div class="game-card game-card-bottom">
+                                <div class="game-card-bottom-content">
+                                    <h3 class="game-card-bottom-title"><span>STRANGE ECHOES -</span></h3>
+                                    <p class="game-card-bottom-text">An ongoing big project aiming to be an adventure game. Watch the Dev logs on YouTube for updates. The story is about a young character who crashes on a planet instead of landing properly. The Characters people land safely on the other side of the planet and this character must survive until they find a way to their people. but when they do all that they get attacked by the native species and are forced to watch as what was being build gets destroyed. The story is unfisished but when i restart the project i will finish it hopefully</p>
+                                </div>
+                                <div class="game-card-bottom-feature">
+                                    <p>Game mechanic: Still working on it. Watch the Devlogs on YouTube for the latest updates and development progress.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="card-container">
-              <div class="card">
-                <div class="img-content">
-                  <img src="img/System/Criminal Record Management System.png" alt="Project 2" class="card__image">
-                </div>
-                <div class="content">
-                  <p class="heading" style="color: black;">Project 2</p>
-                  <p style="color: black;">Brief description of the project goes here. Highlight what makes it special.</p>
-                </div>
-                <button class="card-button">More info</button>
-              </div>
-            </div>
-            <div class="card-container">
-              <div class="card">
-                <div class="img-content">
-                  <img src="img/System/AI Virtual System.png" alt="Project 3" class="card__image">
-                </div>
-                <div class="content">
-                  <p class="heading">Project 3</p>
-                  <p>Brief description of the project goes here. Highlight what makes it special.</p>
-                </div>
-                <button class="card-button">More info</button>
-              </div>
-            </div>
-            <div class="card-container">
-                <div class="card">
-                  <div class="img-content">
-                    <img src="img/System/Grocery store Management.png" alt="Project 3" class="card__image">
-                  </div>
-                  <div class="content">
-                    <p class="heading">Project 3</p>
-                    <p>Brief description of the project goes here. Highlight what makes it special.</p>
-                  </div>
-                  <button class="card-button">More info</button>
-                </div>
-              </div>
-          </div>          
-    </section>
-    -->
-
-    <!-- Footer Section -->
-    <footer id="footer" class="footer-section">
-        <div class="footer-content">
-            <!-- From Uiverse.io by ahmed150up2 --> 
-            <div class="footer-card">
-                <a class="social-link1" href="https://www.linkedin.com/in/sangwani-mkandawire514/">
-                <svg xmlns="http://www.w3.org/2000/svg" fill = "var(--heading-color)" height="1em" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-                </a>
-                <a class="social-link2" href="https://github.com/Sangwani-J0E/">
-                <svg xmlns="http://www.w3.org/2000/svg"s height="1em" viewBox="0 0 448 512" fill = "var(--heading-color)"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>          </a>
-                <a class="social-link3">
-                    <svg viewBox="0 0 16 16" class="bi bi-whatsapp" fill = "var(--heading-color)" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: white"> <path fill="white" d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path> </svg>
-                </a>
-                <a class="social-link4">
-                <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill = "var(--heading-color)"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
-                </a>
-                <a class="social-link5" href="https://github.com/Sangwani-J0E/">
-                    <svg viewBox="0 0 16 16" class="bi bi-instagram" fill = "var(--heading-color)" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: white"> <path fill="white" d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> </svg>
-                </a>
-            </div>             
-            <p>Contact me at: <a href="mailto:">mkandawiresangwnanijoe@gmail.com</a></p>
-            <p>&copy; 2025 Sangwani Mkandawire. All Rights Reserved.</p>
         </div>
-    </footer>
+    </section>
 
-    <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-header">
+                <p class="contact-brand">AndromedaGhost Games</p>
+                <h2 class="contact-title">CONTACT INFORMATION</h2>
+            </div>
+            <div class="contact-image-container">
+                <img src="img/contact/bandicam 2025-12-11 09-44-13-334.jpg" alt="Game towers" class="contact-main-image">
+            </div>
+            <div class="contact-footer">
+                <div class="contact-footer-left">
+                    <div class="contact-footer-item">
+                        <span class="contact-footer-label">Itch.io:</span>
+                        <a href="https://andromedaghostgames.itch.io/" class="contact-footer-link" target="_blank">https://andromedaghostgames.itch.io/</a>
+                    </div>
+                    <div class="contact-footer-item">
+                        <span class="contact-footer-label">Youtube:</span>
+                        <a href="https://m.youtube.com/@andromedaghostgames" class="contact-footer-link" target="_blank">https://m.youtube.com/@andromedaghostgames</a>
+                    </div>
+                </div>
+                <div class="contact-footer-right">
+                    <a href="tel:+265992284101" class="contact-footer-link">+265 992 284 101</a>
+                    <a href="tel:+265887631627" class="contact-footer-link">+265 887 631 627</a>
+                    <a href="mailto:andromedaghostgames@gmail.com" class="contact-footer-link">andromedaghostgames@Gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Preloader -->
-    <div id="preloader"></div>
+    <!-- Game Image Modal -->
+    <div class="game-image-modal" id="gameImageModal">
+        <div class="game-image-modal-backdrop"></div>
+        <div class="game-image-modal-content">
+            <button class="game-image-modal-close" aria-label="Close modal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <img class="game-image-modal-img" src="" alt="Expanded game image">
+        </div>
+    </div>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-    <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/script.js?v=20260225"></script>
 </body>
 </html>
+

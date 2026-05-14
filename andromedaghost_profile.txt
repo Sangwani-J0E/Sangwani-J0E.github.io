@@ -1,0 +1,301 @@
+PERSONAL DETAILS
+-----------------
+Full Name: Sangwani Joe Mkandawire
+Date of Birth: 13 March 2004
+Place of Birth: Likuni Hospital, Lilongwe, Malawi
+Nationality: Malawian
+Sex: Male
+Religion: Christianity
+
+Mobile:
+- +265 992 284 101
+- +265 887 631 627
+
+Emails:
+- andromedaghostgames@gmail.com
+- mkandawiresangwanijoe@gmail.com
+
+Permanent Address:
+Chibu Village, T/A Chikulamayembe, Chitimba, Rumphi, Malawi
+
+Online Profiles & Portfolio:
+- Itch.io: https://andromedaghostgames.itch.io/
+- YouTube: https://m.youtube.com/@andromedaghostgames
+- LinkedIn: https://www.linkedin.com/in/sangwani-mkandawire514/
+- Instagram: https://www.instagram.com/andromedaghost_games/
+- TikTok: https://www.tiktok.com/@andromedaghost13
+
+
+PROFESSIONAL PROFILE / SUMMARY
+------------------------------
+ICT professional, software developer, and computer science graduate with a strong focus on web development, game development, and 3D art for games.
+Experienced in building web-based software applications, hosting and maintaining systems on servers, and developing playable games from concept to release.
+
+Comfortable working across the stack: from front-end UI/UX through gameplay programming in Unity to basic backend and database integration.
+A self-driven learner who improves through bootcamps, game jams, and collaborative projects, with a passion for storytelling through games and building practical software solutions.
+
+
+KEY SKILLS & EXPERTISE
+-----------------------
+
+1) Programming & Software Development
+
+Languages & Frameworks:
+- C#, C/C++, Java, JavaScript, Python, PHP
+- HTML5, CSS, Bootstrap, WordPress
+- Basic: Laravel, Node.js, Flutter
+
+Databases & Data:
+- MySQL, MongoDB, Firebase
+- Basic: SQL, REST APIs
+
+Tools & IDEs:
+- VS Code, PyCharm, Sublime Text, Android Studio
+- Git & GitHub, basic Linux administration
+
+Capabilities:
+- Building web applications and websites for students and small businesses
+- Integrating third-party APIs (e.g., PayChangu payment integration) 
+- Creating Python applications for automation, data analysis, and utilities
+- Designing responsive, mobile-friendly interfaces with modern CSS (Flexbox, Grid, media queries)
+
+
+2) Game Development
+
+Engines & Tools:
+- Unity (primary), C# scripting
+- Basic understanding of Unreal Engine
+
+Game Design & Systems:
+- Designing game mechanics, level design, and player progression
+- Prototyping quickly for game jams under tight deadlines
+- Balancing gameplay, difficulty curves, and player feedback
+- Experience with puzzle design, character switching, stealth & survival, and trick/combination mechanics
+
+Notable Strengths:
+- Turning written concepts into playable prototypes
+- Using game development as a way to learn shaders, visuals, and UI
+- Comfortable iterating and improving older designs based on feedback
+
+
+3) 3D Art & Design (3D Modelling)
+
+Software & Tools:
+- Blender (modelling, sculpting, UVs, texture painting)
+- Substance Painter (texturing & materials)
+- Photoshop (2D editing, texture work)
+
+Capabilities:
+- Character Modelling – creating stylised and game-ready characters
+- Environment Assets – modular environment pieces, props, and set dressing for levels
+- Texturing & Materials – UV mapping, atlasing, texturing for real-time rendering, maintaining cohesive visual style
+- Rigging & Animation (basic) – simple rigs and animations suitable for small projects
+
+Approach:
+- Balances low-poly and high-poly workflows based on performance needs
+- Focus on topology that supports animation, even while still improving in this area
+- Uses texture painting and atlases to keep game visuals consistent and optimized
+
+
+4) Game Design & Level Design
+
+Understanding of:
+- Game moment-to-moment feel, pacing, and player psychology
+- Building levels that encourage exploration, problem-solving, and environmental storytelling
+- Deciding what not to include in a level to keep focus and clarity
+- Designing environment interactions (moving objects, triggers, interactables)
+
+
+5) Additional Skills
+
+- Strong problem-solving and debugging skills
+- Ability to break down complex tasks into manageable steps
+- Excellent communication and collaboration, with group project and freelancing experience
+- Comfortable teaching and sharing knowledge (e.g., involvement with NextGen Academy)
+
+
+EDUCATION
+---------
+
+Bachelor of Science in Computer Science (BSc CS)
+- Institution: DMI St John the Baptist University, Lilongwe
+- Duration: 2020 – 2025
+- Result: Upper First Class, GPA 4.3
+- Key Coursework:
+  - Computer Networks (LAN/WAN concepts)
+  - Operating Systems
+  - Cybersecurity
+  - Databases and Information Systems
+  - Algorithms and Data Structures
+  - Computer Vision and Graphics
+
+Malawi School Certificate of Education (MSCE)
+- School: Biwi Community Day Secondary School
+- Year: 2020
+- Result: 26 points, including 3 in Mathematics
+
+
+CERTIFICATIONS
+--------------
+
+- Responsive Web Design, freeCodeCamp.org – April 2024
+- JavaScript Algorithms and Data Structures, freeCodeCamp.org – November 2024
+- Scientific Computing with Python, freeCodeCamp.org – November 2024
+- Foundational C# with Microsoft, freeCodeCamp.org – August 2025
+- Africa Comicade Game Development Bootcamp – Game development and design bootcamp graduate
+
+
+PROFESSIONAL EXPERIENCE
+-----------------------
+
+Software Developer, UI & UX Designer
+Vendorme Technologies Malawi, Area 25 C, Email Complex
+(Approx. 3 years – dates as per CV)
+
+Responsibilities and Achievements:
+- Developed, deployed, and maintained web-based software applications for both internal use and external clients.
+- Hosted and managed web applications on server environments, ensuring availability, performance, and security.
+- Assisted in basic server administration: deployment, updates, backups, and database management.
+- Supported users by troubleshooting application, system, and access-related issues.
+- Built and managed relational and non-relational databases for business applications.
+- Collaborated with a team of developers and designers to deliver ICT solutions efficiently.
+
+
+Freelance Web Developer
+2021 – Present
+
+- Built websites for students and small businesses, including personal portfolios and service booking platforms.
+- Example: Karaamo Website – an online service booking platform using PayChangu payment integration for online payments, focused on clean, minimalistic UI and user experience.
+- Integrated third-party APIs and created interactive, responsive front-ends using HTML, CSS, JavaScript, and Bootstrap.
+
+
+Student Web & Python Applications
+2020 – 2023
+
+- Created web applications using Flask (Python) to automate tasks and processes for fellow students.
+- Developed Python tools for data analysis, file management, and automation, used by students at your university.
+
+
+GAME DEVELOPMENT PROJECTS
+-------------------------
+
+Underground Turtle Racing
+- Year: 2025 (Demo) – PC
+- Summary: A racing game set in an underground world where turtles with wheels compete in high-stakes races.
+- Theme & Narrative:
+  - Explores the tension between fame and wealth/success in a racing culture dominated by the rich.
+  - Presents a choice between being a famous racer or a rich and powerful competitor.
+- Gameplay:
+  - Turtle racing through underground tracks, with multiple modes and unlockable content (tracks, turtles).
+  - Focus on intense racing, customization, and progression.
+- Status: Demo available on Itch.io; full game in development.
+
+
+Maze Adventure (Mobile)
+- Year: 2023 – Mobile game
+- Summary: First released game and first mobile project; a maze game focused on finding keys and escaping while avoiding enemies.
+- Gameplay:
+  - Click/tap-to-move mechanics.
+  - Collect keys to unlock doors while dodging monsters in maze-like levels.
+- Notes:
+  - Personal learning milestone in puzzle design and mobile game development.
+  - Project files were lost, but lessons learned heavily influenced later games.
+
+
+Bridged Humans – Bridged
+- Year: 2025 – PC (Game jam entry, made in 7 days)
+- Theme: “Connect”
+- Concept:
+  - Control two small characters connected by a rope.
+  - Solve puzzles without letting the rope break.
+- Gameplay Mechanics:
+  - Move and jump, switch between characters, grab items and levers.
+  - Maintain rope tension and distance to avoid breaking the connection.
+- Notes:
+  - Some known bugs in the first level (wheel grabbing), but later levels are more stable.
+  - Strong example of mechanics tied directly to jam theme.
+
+
+The Fall: Dream
+- Year: 2024 – PC (Game jam entry, Honorable Mentions)
+- Summary: A game entirely about falling through obstacles.
+- Gameplay:
+  - Vary fall speed, perform tricks, and avoid objects using key combinations and held inputs.
+- Design Goals:
+  - Explore shaders and visual design.
+  - Direct interpretation of the “falling” theme, used as a creative and technical learning project.
+
+
+Shadows of Solitude
+- Year: 2025 – PC (Africa Comicade Project)
+- Genre: First-person adventure-survival with horror and puzzle elements.
+- Narrative:
+  - Wake up in a dark, forgotten place where every shadow hides a secret.
+  - Explore a forest, discover an impossible house that is much larger inside than outside.
+- Gameplay Mechanics:
+  - Puzzle-based progression: lockpicking, moving objects, rotating portraits, triggering hidden mechanisms.
+  - Stealth, exploration, and environmental storytelling.
+- Notes:
+  - Strong example of combining horror atmosphere with thoughtful puzzle design.
+  - Developed as part of the Africa Comicade program.
+
+
+Strange Echoes (Ongoing Project)
+- Status: In development – PC
+- Summary: A planned adventure game with a narrative about a character who crash-lands on a planet away from their people.
+- Premise:
+  - The main character must survive alone, reach their group, and face attacks from native species.
+  - The story and mechanics are still evolving, with progress documented via devlogs on YouTube.
+
+
+OTHER PROJECTS (FROM CV)
+------------------------
+
+Karaamo Website
+- Freelance project for an online service booking company.
+- Key features: online payments via PayChangu API, simple and minimalistic UI, and good user experience.
+
+
+Sentiment Analysis Tool (Python)
+- Text sentiment classifier (Positive / Negative / Neutral).
+- Accepts user input (phrases, tweets, comments), supports multiple languages.
+- Generates visualizations like bar charts for polarity and subjectivity.
+
+
+Personal Portfolio Website
+- Central hub showcasing skills, games, and projects.
+- Focus on clear presentation of technical and creative abilities.
+
+
+Virtual Navigation System (Final-Year Project)
+- Uses camera feed to track hand movements and gestures to control mouse and keyboard.
+- Performs object detection and distance measurement using computer vision techniques (e.g., contour detection, depth estimation).
+- Demonstrates advanced skills in machine learning, computer vision, and UI.
+
+
+BOOTCAMPS, JAMS & COMMUNITY
+---------------------------
+
+Africa Comicade Bootcamp Graduate
+- Intensive program focused on game design, development, and production workflows.
+- Participated in multiple game jams during the bootcamp, each showing progressive skill improvement.
+
+
+Game Jams
+- Multiple entries, including Raining Bullets / The Fall: Dream (honorable mention) and Bridged Humans (Connect theme).
+- Comfortable working under strict time limits, scoping ideas appropriately, and delivering playable builds.
+
+
+NextGen Academy / Teaching
+- Involved in teaching others about game development (as mentioned in the About section of the site).
+- Demonstrates ability to explain concepts and support new learners.
+
+
+PERSONAL STATEMENT (CV-READY)
+-----------------------------
+As a computer science graduate and self-driven game developer, I combine strong technical skills in programming and software development with a deep passion for game design and 3D art.
+I have built web applications, automation tools, and multiple games, learning from each project and continually pushing myself through bootcamps, freelance work, and game jams.
+
+I enjoy turning ideas into playable, interactive experiences and practical software that solves real problems.
+I am eager to contribute to a team where I can apply and grow my skills in software development, game development, or ICT, while learning from others and bringing my creativity, discipline, and problem-solving mindset to every project.
+
